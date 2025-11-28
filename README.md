@@ -19,3 +19,20 @@
 ##### 2. LOANS(loan_id, borrower_id, loan_amount, issue_date, due_date, status) 
 ##### 3. REPAYMENTS(repayment_id, loan_id, amount_paid, payment_date, status) 
 #### PL/SQL Collections store repayment histories during processing, and Records hold consolidated borrower assessment data. 
+### 6. System Features 
+#### • Borrower registration and loan tracking. 
+#### • Repayment monitoring through Collections. 
+#### • Risk score calculation based on behavior. 
+#### • Automatic classification into risk categories. 
+#### • GOTO‑based error redirection for invalid inputs. 
+#### • Detailed borrower risk reports. 
+### 7. Innovation and Uniqueness 
+#### Unlike traditional PL/SQL student projects such as inventory systems or employee management, BRRS implements a real‑world scoring model used by financial institutions. It incorporates repayment behavior analysis, pattern detection, and structured risk evaluation. The project is highly relevant in Rwanda's growing microfinance and SACCO sectors. 
+### 8. Expected Outputs 
+#### • Borrower risk score between 0 and 100. 
+#### • Risk category output: LOW, MEDIUM, or HIGH. 
+#### • Alerts for borrowers who frequently default. 
+#### • Summary reports for management decision‑making. 
+#### • Error-handling logs for invalid data entries. 
+### 9. Conclusion 
+#### The Borrower Risk Rating System (BRRS) is an innovative project that uses PL/SQL to bring automation and intelligence to loan management. With its unique scoring model and structured processing approach, the system helps microfinance institutions reduce financial risk and improve decision‑making. It demonstrates strong command of PL/SQL constructs such as Collections, Records, loops, conditions, GOTO, and exception handling. 
