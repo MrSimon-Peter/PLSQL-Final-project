@@ -11,3 +11,11 @@
 #### • To store and analyze loan repayment data using Collections and Records. 
 #### • To generate alerts for borrowers with high‑risk scores. 
 #### • To produce automated risk reports for decision‑making. 
+### 4. Proposed System Overview 
+#### The BRRS system processes borrower information and repayment logs to compute a risk score ranging from 0 to 100. Based on the score, the system classifies borrowers into Low, Medium, or High risk groups. It uses PL/SQL procedures, validations, exception handling, and conditional logic to ensure consistent and reliable scoring. 
+### 5. Database Schema
+#### The system uses the following main tables: 
+##### 1. BORROWERS(borrower_id, full_name, phone, registration_date) 
+##### 2. LOANS(loan_id, borrower_id, loan_amount, issue_date, due_date, status) 
+##### 3. REPAYMENTS(repayment_id, loan_id, amount_paid, payment_date, status) 
+#### PL/SQL Collections store repayment histories during processing, and Records hold consolidated borrower assessment data. 
