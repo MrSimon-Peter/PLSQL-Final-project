@@ -42,7 +42,18 @@
 ##### 9. Disbursement
 ## 2.NORMALIZATION (1NF,2NF,3NF)
 ## Step1:First Normal Form (1NF)
-##### All 9 entities meet 1NF because:
-###### They each have a unique primary key
-###### All attributes store atomic values (no lists or multi-valued attributes)
-###### No repeating groups exist
+#### All BRRS tables are in 1NF because:
+##### .Each table has a primary key
+##### .All attributes are atomic
+##### .No repeating groups
+##### .No multi-valued fields
+## Step2️: Second Normal Form (2NF)
+#### Condition: No partial dependency on a composite PK
+#### BRRS: All tables use single-column PKs,no partial dependencies possible.
+## Step3: 3️.Third Normal Form (3NF)
+#### Condition: No transitive dependencies
+#### BRRS Checks:
+##### Borrower info separated from Loan_Application
+##### Officer, Manager, Accountant stored in their own tables
+##### Risk_Assessment stores only IDs, not names
+##### No attribute depends on another non-key attribute
