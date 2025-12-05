@@ -41,16 +41,16 @@
 ##### 8. Accountant
 ##### 9. Disbursement
 ## 2.NORMALIZATION (1NF,2NF,3NF)
-## Step1:First Normal Form (1NF)
+### Step1:First Normal Form (1NF)
 #### All BRRS tables are in 1NF because:
 ##### .Each table has a primary key
 ##### .All attributes are atomic
 ##### .No repeating groups
 ##### .No multi-valued fields
-## Step2️: Second Normal Form (2NF)
+### Step2️: Second Normal Form (2NF)
 #### Condition: No partial dependency on a composite PK
 #### BRRS: All tables use single-column PKs,no partial dependencies possible.
-## Step3: 3️.Third Normal Form (3NF)
+### Step3: 3️.Third Normal Form (3NF)
 #### Condition: No transitive dependencies
 #### BRRS Checks:
 ##### Borrower info separated from Loan_Application
