@@ -29,3 +29,16 @@
 ##### Generates managerial reports
 ## 7.Managerial Value
 ##### This process helps managers identify risky borrowers early, reduce default rates, improve decision accuracy, and enhance financial stability in SACCOs and microfinance institutions. It ensures lending decisions are data-driven and compliant with financial best practices.
+# PHASE III: Logical Model Design
+## 1.Final Entities
+##### 1. Borrower
+##### 2. Loan Application
+##### 3. Repayment
+##### 4. Risk Assessment
+##### 5. Loan Officer
+##### 6. Manager
+##### 7. Manager Approval
+##### 8. Accountant
+##### 9. Disbursement
+## 2.NORMALIZATION (1NF,2NF,3NF)
+## Step1:First Normal Form (1NF)
