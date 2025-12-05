@@ -42,3 +42,7 @@
 ##### 9. Disbursement
 ## 2.NORMALIZATION (1NF,2NF,3NF)
 ## Step1:First Normal Form (1NF)
+##### All 9 entities meet 1NF because:
+###### They each have a unique primary key
+###### All attributes store atomic values (no lists or multi-valued attributes)
+###### No repeating groups exist
