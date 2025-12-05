@@ -11,3 +11,21 @@
 ##### Data sources:repayment history,loan application,borrower info
 ## 3.One Paragraph BPMN Explanation
 ##### The process starts when the borrower submits a loan application to the Loan Officer, who records borrower details and loan information in the system. The BRRS system then retrieves repayment history and past borrowing behavior from its database. Meanwhile, the Accountant updates repayment information as borrowers make payments. The system analyzes repayment timeliness, missed payments, and outstanding balances to calculate a risk score. A decision gateway checks whether the risk score exceeds the high-risk threshold. If yes, a high-risk alert is generated and forwarded to the Manager; if not, the borrower is marked low or medium risk. Finally, the Manager reviews the system-generated risk assessment and decides whether to approve or reject the loan. The process ends once the managerial decision is recorded.
+## 4.Start and End Points
+##### Start Event:Borrower submits loan application.
+##### End Event:Manager approves or rejects the loan.
+## 5.Business Actors
+##### a.Borrower:Provides information and requests the loan.
+##### b.Loan Officer:Collects borrower details & initiates the process.
+##### c.Accountant:Updates repayment records used by the scoring engine.
+##### d.Manager:Makes the final loan approval decision.
+## 6.System Interactions
+### BRRS System Automatically:
+##### Retrieves borrower’s past loan information
+##### Collects repayment history
+##### Computes risk score
+##### Assigns risk category
+##### Triggers alerts
+##### Generates managerial reports
+## 7.Managerial Value
+##### This process helps managers identify risky borrowers early, reduce default rates, improve decision accuracy, and enhance financial stability in SACCOs and microfinance institutions. It ensures lending decisions are data-driven and compliant with financial best practices.
