@@ -67,3 +67,62 @@
 #### | phone       | VARCHAR2(20)  |     | Contact phone number |
 #### | email       | VARCHAR2(50)  |     | Email address        |
 #### | address     | VARCHAR2(100) |     | Physical address     |
+### 2. LOAN APPLICATION
+#### | Column           | Type         | Key                       | Description                   |
+#### | ---------------- | ------------ | ------------------------- | ----------------------------- |
+#### | loan_id          | NUMBER       | PK                        | Unique loan record            |
+#### | borrower_id      | NUMBER       | FK  borrower.borrower_id | Loan owner                    |
+#### | loan_amount      | NUMBER       |                           | Amount requested              |
+#### | loan_type        | VARCHAR2(30) |                           | Type (Microloan, SME, etc.)   |
+#### | application_date | DATE         |                           | Date of application           |
+#### | status           | VARCHAR2(20) |                           | Pending / Approved / Rejected |
+### 3. REPAYMENT
+#### | Column       | Type         | Key                           | Description              |
+#### | ------------ | ------------ | ----------------------------- | ------------------------ |
+#### | repayment_id | NUMBER       | PK                            | Unique payment record    |
+#### | loan_id      | NUMBER       | FK  loan_application.loan_id | Related loan             |
+#### | amount_paid  | NUMBER       |                               | Amount repaid            |
+#### | payment_date | DATE         |                               | Date of payment          |
+#### | method       | VARCHAR2(20) |                               | Cash, Mobile Money, Bank |
+### 4. RISK_ASSESSMENT
+#### | Column          | Type         | Key                           | Description                   |
+#### | --------------- | ------------ | ----------------------------- | ----------------------------- |
+#### | assessment_id   | NUMBER       | PK                            | Unique assessment record      |
+#### | borrower_id     | NUMBER       | FK  borrower.borrower_id     | Borrower being scored         |
+#### | loan_id         | NUMBER       | FK  loan_application.loan_id | Loan being assessed           |
+#### | risk_score      | NUMBER       |                               | Calculated risk score (0–100) |
+#### | risk_level      | VARCHAR2(10) |                               | Low / Medium / High           |
+#### | assessment_date | DATE         |                               | Date of scoring               |
+#### | officer_id      | NUMBER       | FK  loan_officer.officer_id  | Officer who assessed          |
+### 5. LOAN OFFICER
+#### | Column     | Type          | Key | Description          |
+#### | ---------- | ------------- | --- | -------------------- |
+#### | officer_id | NUMBER        | PK  | Unique officer ID    |
+#### | full_name  | VARCHAR2(100) |     | Name of loan officer |
+### 6. MANAGER
+#### | Column     | Type          | Key | Description       |
+#### | ---------- | ------------- | --- | ----------------- |
+#### | manager_id | NUMBER        | PK  | Unique manager ID |
+#### | full_name  | VARCHAR2(100) |     | Manager name      |
+### 7. MANAGER APPROVAL
+#### | Column          | Type          | Key                                | Description               |
+#### | --------------- | ------------- | ---------------------------------- | ------------------------- |
+#### | approval_id     | NUMBER        | PK                                 | Unique approval entry     |
+#### | assessment_id   | NUMBER        | FK  risk_assessment.assessment_id | Assessment being approved |
+#### | manager_id      | NUMBER        | FK  manager.manager_id            | Manager who approves      |
+#### | approval_status | VARCHAR2(20)  |                                    | Approved / Rejected       |
+#### | approval_date   | DATE          |                                    | Date of approval          |
+#### | comments        | VARCHAR2(200) |                                    | Manager remarks           |
+### 8. ACCOUNTANT
+#### | Column        | Type          | Key | Description          |
+#### | ------------- | ------------- | --- | -------------------- |
+#### | accountant_id | NUMBER        | PK  | Unique accountant ID |
+#### | full_name     | VARCHAR2(100) |     | Accountant name      |
+### 9. DISBURSEMENT
+#### | Column            | Type   | Key                           | Description                        |
+#### | ----------------- | ------ | ----------------------------- | ---------------------------------- |
+#### | disbursement_id   | NUMBER | PK                            | Unique disbursement ID             |
+#### | loan_id           | NUMBER | FK  loan_application.loan_id | Loan being disbursed               |
+#### | accountant_id     | NUMBER | FK  accountant.accountant_id | Accountant processing disbursement |
+#### | disbursed_amount  | NUMBER |                               | Amount released                    |
+#### | disbursement_date | DATE   |                               | Date of disbursement               |
