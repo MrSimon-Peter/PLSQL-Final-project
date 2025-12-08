@@ -60,10 +60,10 @@
 ## DATA DICTIONARY (BRRS_DB)
 ### 1. BORROWER
 #### | Column      | Type          | Key | Description          |
-| ----------- | ------------- | --- | -------------------- |
-| borrower_id | NUMBER        | PK  | Unique borrower ID   |
-| full_name   | VARCHAR2(100) |     | Borrower full name   |
-| national_id | VARCHAR2(20)  |     | Rwanda national ID   |
-| phone       | VARCHAR2(20)  |     | Contact phone number |
-| email       | VARCHAR2(50)  |     | Email address        |
-| address     | VARCHAR2(100) |     | Physical address     |
+#### | ----------- | ------------- | --- | -------------------- |
+#### | borrower_id | NUMBER        | PK  | Unique borrower ID   |
+#### | full_name   | VARCHAR2(100) |     | Borrower full name   |
+#### | national_id | VARCHAR2(20)  |     | Rwanda national ID   |
+#### | phone       | VARCHAR2(20)  |     | Contact phone number |
+#### | email       | VARCHAR2(50)  |     | Email address        |
+#### | address     | VARCHAR2(100) |     | Physical address     |
