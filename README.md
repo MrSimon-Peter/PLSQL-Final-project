@@ -126,5 +126,5 @@
 #### | accountant_id     | NUMBER | FK  accountant.accountant_id | Accountant processing disbursement |
 #### | disbursed_amount  | NUMBER |                               | Amount released                    |
 #### | disbursement_date | DATE   |                               | Date of disbursement               |
-## PHASE IV
+## PHASE IV: Database Creation
 #### In this step, the Oracle database environment was prepared for schema implementation. The correct pluggable database was activated and tested, and the project administrator account was verified with full privileges. Naming conventions and implementation scripts were prepared to ensure a smooth transition to the table implementation phase.
