@@ -128,3 +128,13 @@
 #### | disbursement_date | DATE   |                               | Date of disbursement               |
 ## PHASE IV: Database Creation
 #### In this step, the Oracle database environment was prepared for schema implementation. The correct pluggable database was activated and tested, and the project administrator account was verified with full privileges. Naming conventions and implementation scripts were prepared to ensure a smooth transition to the table implementation phase.
+## PHASE V: Table Implementation & Data Insertion
+### Table Creation:
+#### TABLE 1: BORROWER
+#### .Stores borrower personal details
+#### .borrower_id uniquely identifies each borrower
+#### .national_id is unique to avoid duplicates
+#### TABLE 2: LOAN_APPLICATION
+#### Each loan application belongs to one borrower
+#### borrower_id links this table to Borrower
+#### status stores values like Pending, Approved, Rejected
