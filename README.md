@@ -160,3 +160,8 @@
 ##### approval_status → Approved / Rejected
 ##### remarks stores comments from the manager
 ##### Records who approved what and when
+#### TABLE 8: ACCOUNTANT
+##### Stores accountant details
+##### Accountants handle financial processing
+##### accountant_id uniquely identifies each accountant
+#### TABLE 9: DISBURSEMENT
