@@ -134,7 +134,29 @@
 ##### .Stores borrower personal details
 ##### .borrower_id uniquely identifies each borrower
 ##### .national_id is unique to avoid duplicates
-##### TABLE 2: LOAN_APPLICATION
+#### TABLE 2: LOAN_APPLICATION
 ##### Each loan application belongs to one borrower
 ##### borrower_id links this table to Borrower
 ##### status stores values like Pending, Approved, Rejected
+#### TABLE 3: REPAYMENT
+##### Each repayment is linked to one loan application
+##### repayment_amount stores how much was paid
+##### repayment_date is automatically recorded
+#### TABLE 4: RISK_ASSESSMENT
+##### Each risk assessment belongs to one loan application
+##### risk_score stores numerical risk value
+##### risk_level can be Low, Medium, High
+##### assessment_date records when assessment was done
+#### TABLE 5: LOAN_OFFICER
+##### Stores staff responsible for loan processing
+##### email is unique per officer
+##### officer_id uniquely identifies each loan officer
+#### TABLE 6: MANAGER
+##### Stores manager details
+##### Managers are responsible for final review
+##### manager_id uniquely identifies each manager
+#### TABLE 7: MANAGER_APPROVAL
+##### Links loan applications and managers
+##### approval_status → Approved / Rejected
+##### remarks stores comments from the manager
+##### Records who approved what and when
