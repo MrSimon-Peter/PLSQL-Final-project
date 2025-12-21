@@ -131,43 +131,61 @@
 #### | disbursed_amount  | NUMBER |                               | Amount released                    |
 #### | disbursement_date | DATE   |                               | Date of disbursement               |
 ## PHASE IV: Database Creation
+<img width="1920" height="1080" alt="Create Project Admin User" src="https://github.com/user-attachments/assets/5f0d3c76-31ec-4fce-ba52-bbc55814f816" />
+
 #### In this step, the Oracle database environment was prepared for schema implementation. The correct pluggable database was activated and tested, and the project administrator account was verified with full privileges. Naming conventions and implementation scripts were prepared to ensure a smooth transition to the table implementation phase.
 ## PHASE V: Table Implementation & Data Insertion
-<img width="1920" height="1080" alt="Create Project Admin User" src="https://github.com/user-attachments/assets/5337eb3d-c6cf-4f27-930a-a78cc88fc21f" />
-
 ### Table Creation:
 #### TABLE 1: BORROWER
+<img width="1919" height="1005" alt="Create Borrower table1" src="https://github.com/user-attachments/assets/1816f5ae-6e6d-4c67-bc86-2400da9dee9a" />
+
 ##### .Stores borrower personal details
 ##### .borrower_id uniquely identifies each borrower
 ##### .national_id is unique to avoid duplicates
 #### TABLE 2: LOAN_APPLICATION
+<img width="1918" height="1006" alt="create table loan application2" src="https://github.com/user-attachments/assets/b35b3368-a56a-4c79-b96d-02f29b373a72" />
+
 ##### Each loan application belongs to one borrower
 ##### borrower_id links this table to Borrower
 ##### status stores values like Pending, Approved, Rejected
 #### TABLE 3: REPAYMENT
+<img width="1919" height="1006" alt="create repayment table3" src="https://github.com/user-attachments/assets/347007f1-f6f4-4bd7-8050-4e1c24332359" />
+
 ##### Each repayment is linked to one loan application
 ##### repayment_amount stores how much was paid
 ##### repayment_date is automatically recorded
 #### TABLE 4: RISK_ASSESSMENT
+<img width="1919" height="1006" alt="create risk_assessment table4" src="https://github.com/user-attachments/assets/9ffc40a4-4826-4049-b924-520915db7fb6" />
+
 ##### Each risk assessment belongs to one loan application
 ##### risk_score stores numerical risk value
 ##### risk_level can be Low, Medium, High
 ##### assessment_date records when assessment was done
 #### TABLE 5: LOAN_OFFICER
+<img width="1919" height="1009" alt="create loan officer table5" src="https://github.com/user-attachments/assets/10bce68b-3a01-4bac-aea1-5f5b71db7a7c" />
+
 ##### Stores staff responsible for loan processing
 ##### email is unique per officer
 ##### officer_id uniquely identifies each loan officer
 #### TABLE 6: MANAGER
+<img width="1919" height="1007" alt="create manger table6" src="https://github.com/user-attachments/assets/a93f7675-0bcb-4344-97a1-9d95dc24ea9d" />
+
 ##### Stores manager details
 ##### Managers are responsible for final review
 ##### manager_id uniquely identifies each manager
 #### TABLE 7: MANAGER_APPROVAL
+<img width="1919" height="1009" alt="create manager approval table7" src="https://github.com/user-attachments/assets/4941e0df-8f3e-40e8-b8ca-a2d3a73f4180" />
+
 ##### Links loan applications and managers
 ##### approval_status → Approved / Rejected
 ##### remarks stores comments from the manager
 ##### Records who approved what and when
 #### TABLE 8: ACCOUNTANT
+<img width="1919" height="1010" alt="create Accountant table8" src="https://github.com/user-attachments/assets/854b108d-b179-4adc-b860-8e8b07c7cbe2" />
+
 ##### Stores accountant details
 ##### Accountants handle financial processing
 ##### accountant_id uniquely identifies each accountant
 #### TABLE 9: DISBURSEMENT
+![Uploading create disbursement table9.png…]()
+
