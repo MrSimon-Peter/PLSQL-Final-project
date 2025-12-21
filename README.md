@@ -33,6 +33,7 @@
 ##### This process helps managers identify risky borrowers early, reduce default rates, improve decision accuracy, and enhance financial stability in SACCOs and microfinance institutions. It ensures lending decisions are data-driven and compliant with financial best practices.
 # PHASE III: Logical Model Design
 <img width="1919" height="1008" alt="ERD OG" src="https://github.com/user-attachments/assets/a95111f4-a7a5-4a46-b282-c7c52055dda6" />
+
 ## 1.Entities
 ##### 1. Borrower
 ##### 2. Loan Application
