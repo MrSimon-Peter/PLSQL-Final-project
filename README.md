@@ -187,5 +187,6 @@
 ##### Accountants handle financial processing
 ##### accountant_id uniquely identifies each accountant
 #### TABLE 9: DISBURSEMENT
-![Uploading create disbursement table9.png…]()
+<img width="1919" height="1011" alt="create disbursement table9" src="https://github.com/user-attachments/assets/9c46d07e-e90f-4c0d-b759-8347fb0e9ad3" />
+
 
