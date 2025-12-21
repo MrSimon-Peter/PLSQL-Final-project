@@ -133,6 +133,8 @@
 ## PHASE IV: Database Creation
 #### In this step, the Oracle database environment was prepared for schema implementation. The correct pluggable database was activated and tested, and the project administrator account was verified with full privileges. Naming conventions and implementation scripts were prepared to ensure a smooth transition to the table implementation phase.
 ## PHASE V: Table Implementation & Data Insertion
+<img width="1920" height="1080" alt="Create Project Admin User" src="https://github.com/user-attachments/assets/5337eb3d-c6cf-4f27-930a-a78cc88fc21f" />
+
 ### Table Creation:
 #### TABLE 1: BORROWER
 ##### .Stores borrower personal details
